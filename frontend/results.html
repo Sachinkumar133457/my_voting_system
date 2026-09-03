@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Election Results | VoteNow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="vote1.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="about-page-body">
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <img src="vote.jpeg" alt="VoteNow Logo">
+                <div class="logo-text">
+                    <h2>VoteNow</h2>
+                    <p>Online Voting System</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="process.html">Voting Process</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="results.html" class="active">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="buttons">
+                <!-- User Profile & Logout button dynamically injected by app.js -->
+                <a href="login.html" class="login-btn"><i class="fa-regular fa-user"></i> Login</a>
+                <a href="register.html" class="register-btn"><i class="fa-solid fa-user-plus"></i> Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title Breadcrumb Banner -->
+    <section class="inner-page-header">
+        <div class="inner-header-content">
+            <h1>Live Election Results</h1>
+            <p><a href="index.html">Home</a> / <span>Live Results</span></p>
+        </div>
+    </section>
+
+    <!-- Results Dashboard Section -->
+    <section class="results-dashboard">
+        <div class="results-flex">
+            
+            <!-- Left Summary Card -->
+            <div class="results-summary-card">
+                <h3>Election Overview</h3>
+                <h4>Status: Live Counting</h4>
+                
+                <div class="res-meta">
+                    <p>Total Votes Cast:</p>
+                    <strong>Loading...</strong>
+                </div>
+                <div class="res-meta">
+                    <p>Security Level:</p>
+                    <strong>256-bit Encrypted</strong>
+                </div>
+
+                <div class="status-badge">
+                    <i class="fa-solid fa-signal"></i> Real-time Sync Active
+                </div>
+            </div>
+
+            <!-- Right Overview Card (Dynamically Filled by app.js from Backend) -->
+            <div class="results-overview-card">
+                <h3>Results Overview</h3>
+                <p style="color: #64748b; font-size: 14px;">Fetching live counts from database...</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="vote.jpeg" alt="VoteNow Logo">
+                <div class="footer-logo-text">
+                    <h3>VoteNow</h3>
+                    <p>Online Voting System</p>
+                </div>
+            </div>
+            <p class="copyright-text">&copy; 2026 VoteNow. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

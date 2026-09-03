@@ -1,0 +1,19 @@
+{
+  "name": "my-voting-system",
+  "version": "1.0.0",
+  "description": "Full Stack Voting System Major Project",
+  "main": "backend/server.js",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "npx serve frontend -p 3000",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "google-auth-library": "^11.0.2",
+    "nodemailer": "^9.0.3"
+  }
+}

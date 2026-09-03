@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Process | VoteNow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="vote1.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <img src="vote.jpeg" alt="VoteNow Logo">
+                <div class="logo-text">
+                    <h2>VoteNow</h2>
+                    <p>Online Voting System</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="process.html">Voting Process</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="login.html" class="login-btn"><i class="fa-regular fa-user"></i> Login</a>
+                <a href="register.html" class="register-btn"><i class="fa-solid fa-user-plus"></i> Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="inner-page-header">
+        <h1>Seamless Voting Process</h1>
+        <p><a href="index.html">Home</a> / Voting Process</p>
+    </section>
+
+    <section class="why-section">
+        <div class="section-header">
+            <h4>EASY STEPS</h4>
+            <h2>How You Cast Your Vote Securely</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon blue-bg">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <h3>1. Account Registration</h3>
+                <p>Register using your verified email address and Voter ID to create your secure digital profile.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon green-bg">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </div>
+                <h3>2. Secure Login</h3>
+                <p>Login securely with JWT-encrypted authentication tokens to access the active election ballot.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon orange-bg">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                </div>
+                <h3>3. Cast Encrypted Vote</h3>
+                <p>Select your candidate from the ballot. Your vote is recorded once and instantly locked in MongoDB.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon purple-bg">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                </div>
+                <h3>4. Live Real-Time Results</h3>
+                <p>Track vote progression and election statistics in real-time on our transparent dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
